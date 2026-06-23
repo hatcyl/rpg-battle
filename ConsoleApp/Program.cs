@@ -20,5 +20,11 @@ class Program
 
         Console.WriteLine("monster1 attacked monster2 3 times.");
         Console.WriteLine($"monster2 HP is now {monster2.Hp}");
+
+        monster2.AttackMonster(monster1);
+        monster2.AttackMonster(monster1);
+
+        Console.WriteLine("monster 2 attacked monster 1.");
+        Console.WriteLine($"Montster 1 is now at {monster1.Hp}.");
     }
 }
