@@ -19,7 +19,7 @@ public class Monster(int hp, int attack, int defense)
 
     private void TakeDamage(int attack)
     {
-        int newHp = Hp - (Attack - Defense);
+        int newHp = Hp - (attack - Defense);
         {
             if (Determination == true && Hp > 1 && newHp < 1)
                 Hp = 1;
