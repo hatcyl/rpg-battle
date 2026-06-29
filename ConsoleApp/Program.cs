@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Battle Start!");
 
-        Monster monster1 = new Monster(20, 5, 3);
+        Monster monster1 = new Monster(30, 10, 3);
         monster1.Determination = true;
         Monster monster2 = new Monster(20, 5, 3);
 
