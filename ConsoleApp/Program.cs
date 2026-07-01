@@ -15,12 +15,11 @@ class Program
         Console.WriteLine($"Attack: {monster1.Attack}");
         Console.WriteLine($"Defense: {monster1.Defense}");
 
-    while (monster1.IsDead == false && monster2.IsDead == false)
-        {
-            monster1.AttackMonster(monster2);
-            if (monster2.IsDead == true) break;
-            monster2.AttackMonster(monster1);
-            if (monster1.IsDead == true) break;
-        }
+        monster1.AttackMonster(monster2);
+        monster1.AttackMonster(monster2);
+        monster1.AttackMonster(monster2);
+
+        Console.WriteLine("monster1 attacked monster2 3 times.");
+        Console.WriteLine($"monster2 HP is now {monster2.Hp}");
     }
 }
