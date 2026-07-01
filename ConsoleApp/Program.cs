@@ -6,8 +6,9 @@ class Program
     {
         Console.WriteLine("Battle Start!");
 
-        Monster monster1 = new Monster(20, 5, 3);
-        Monster monster2 = new Monster(20, 5, 3);
+        Monster monster1 = new Monster(50, 10, 50, "monster1");
+        monster1.Determination = true;
+        Monster monster2 = new Monster(50, 5, 50, "monster2");
 
         Console.WriteLine("monster1 stats:");
         Console.WriteLine($"HP: {monster1.Hp}");
