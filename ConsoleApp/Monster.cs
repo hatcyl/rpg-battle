@@ -46,5 +46,12 @@ public class Monster(int hp, int attack, int defense, string name)
         DefendCharge = 0;
         HealCharge = false;
         Shield = false;
-    }   
+    }
+    public void HealMonster(bool HealCharge)
+    {
+        if (HealCharge == true)
+            Hp = (Hp + 30);
+        else
+            return;
+    }
 }
